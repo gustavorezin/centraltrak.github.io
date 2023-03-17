@@ -119,6 +119,22 @@
   }
 
   /**
+   * Whatsapp button
+   */
+  const wppBtn = document.querySelector('.btn-wpp-top');
+  if (wppBtn) {
+    const togglewppBtn = function() {
+      window.scrollY > 100 ? wppBtn.classList.add('active') : wppBtn.classList.remove('active');
+    }
+    window.addEventListener('load', togglewppBtn);
+    document.addEventListener('scroll', togglewppBtn);
+    wppBtn.addEventListener('click', window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    }));
+  }
+
+  /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {

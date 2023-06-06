@@ -1,9 +1,9 @@
 function limparForm() {
   let elementos = document.querySelector(".formContato").elements; // retorna os elementos dentro do form
-    for(i = 0; i < elementos.length; i++) {
-      elementos[i].value = '';
-    }
+  for(i = 0; i < elementos.length; i++) {
+    elementos[i].value = '';
   }
+}
 
 const forms = document.querySelectorAll('.needs-validation')
 
